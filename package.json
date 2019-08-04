@@ -1,6 +1,7 @@
 {
   "name": "seleneer",
-  "version": "1.0.0",
+  "version": "0.0.1",
+  "private": true,
   "description": "Combining Selenium & Puppeter",
   "main": "index.js",
   "scripts": {
