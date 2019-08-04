@@ -16,12 +16,22 @@ With this port exposed we're going to connect to the devtools using puppeteer-co
 let browser = await puppeteer.connect({browserURL:"http://127.0.0.1:9222"});
 ...
 ```
-For ex: In `test_animations.js` test we're changing the animation behaviour in Chrome by changing it's playbackRate. This way we can disable animations completely by setting the playbackrate to Zero;
+Let's take look at W3School example on CSS animations. By default Chrome will have all animations enabled, but this can lead to flakiness on functional or visual tests. 
+
+Using this approach on puppeter using the existing Chrome session started by Seleniumtest we can change the animation behaviour in Chrome by changing it's playbackRate. 
+
+**Animation enabled**
+<img src="https://raw.githubusercontent.com/vrunoa/seleneer/f735413fb575bc369d024577fc17a46a34ead8d4/docs/animation-enabled.gif?token=AACQRZK3AFLRV7JEW4LRVNS5I5B5S" />
+
+Now we can disable animations completely by setting the playbackRate to Zero;
 ```
 await client.send('Animation.setPlaybackRate', {
   playbackRate: 0
 });
 ```
+
+**Animations disabled**
+<img src="https://raw.githubusercontent.com/vrunoa/seleneer/f735413fb575bc369d024577fc17a46a34ead8d4/docs/animation-disabled.gif?token=AACQRZLY7WGK44ZKN76U5MS5I5BZQ" />
 
 # Development
 ```
