@@ -16,6 +16,12 @@ With this port exposed we're going to connect to the devtools using puppeteer-co
 let browser = await puppeteer.connect({browserURL:"http://127.0.0.1:9222"});
 ...
 ```
+For ex: In `test_animations.js` test we're changing the animation behaviour in Chrome by changing it's playbackRate. This way we can disable animations completely by setting the playbackrate to Zero;
+```
+await client.send('Animation.setPlaybackRate', {
+  playbackRate: 0
+});
+```
 
 # Development
 ```
