@@ -1,6 +1,7 @@
 const wd = require('wd');
 const chai = require('chai');
 const expect = chai.expect;
+const sleep = require('asyncbox').sleep;
 const puppeteer = require('puppeteer-core');
 const DEFAULT_PLAYBACK_RATE = 2;
 let PLAYBACK_RATE = DEFAULT_PLAYBACK_RATE;
@@ -40,7 +41,9 @@ describe('simple selenium chrome test', async () => {
       });
     }
     await driver.get('https://www.w3schools.com/css/css3_animations.asp');
+    await sleep(1500);
     let el = await driver.elementById('animated_div');
     expect(el).to.not.equal(null);
+    await browser.disconnect();
   });
 });
