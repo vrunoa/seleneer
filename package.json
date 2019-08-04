@@ -33,6 +33,7 @@
   },
   "homepage": "https://github.com/vrunoa/seleneer#readme",
   "devDependencies": {
+    "asyncbox": "^2.5.3",
     "babel-eslint": "^10.0.2",
     "chai": "^4.2.0",
     "eslint": "^6.1.0",
