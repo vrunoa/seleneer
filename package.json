@@ -1,0 +1,33 @@
+{
+  "name": "seleneer",
+  "version": "1.0.0",
+  "description": "Combining Selenium & Puppeter",
+  "main": "index.js",
+  "scripts": {
+    "start-selenium": "java -jar ./bin/selenium-server-standalone-3.11.0.jar &",
+    "test-animations-enabled": "PLAYBACK_RATE=2 node_modules/.bin/mocha -b -t 0 tests/test_animations.js",
+    "test-animations-disabled": "PLAYBACK_RATE=0 node_modules/.bin/mocha -b -t 0 tests/test_animations.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vrunoa/seleneer.git"
+  },
+  "keywords": [
+    "selenium",
+    "puppetter",
+    "test",
+    "automation"
+  ],
+  "author": " <vruno.alassia@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vrunoa/seleneer/issues"
+  },
+  "homepage": "https://github.com/vrunoa/seleneer#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0",
+    "puppeteer-core": "^1.19.0",
+    "wd": "^1.11.3"
+  }
+}
