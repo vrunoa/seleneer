@@ -1,5 +1,5 @@
 # seleneer (dont judge me, naming is hard)
-Playing around combining Selenium & Puppeteer
+Experiments combining Selenium & Puppeter
 
 # Why?
 The idea for this project is just a POC on how to extend Selenium capabilities for Chrome injecting extra functionalities with Puppeteer Core. 

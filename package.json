@@ -2,7 +2,7 @@
   "name": "seleneer",
   "version": "0.0.1",
   "private": true,
-  "description": "Combining Selenium & Puppeter",
+  "description": "Experiments combining Selenium & Puppeter",
   "main": "index.js",
   "scripts": {
     "lint": "eslint ./tests",
