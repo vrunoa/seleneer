@@ -21,6 +21,7 @@ Let's take look at W3School example on CSS animations. By default Chrome will ha
 Using this approach on puppeter using the existing Chrome session started by Seleniumtest we can change the animation behaviour in Chrome by changing it's playbackRate. 
 
 **Animation enabled**
+
 <img src="https://raw.githubusercontent.com/vrunoa/seleneer/f735413fb575bc369d024577fc17a46a34ead8d4/docs/animation-enabled.gif?token=AACQRZK3AFLRV7JEW4LRVNS5I5B5S" />
 
 Now we can disable animations completely by setting the playbackRate to Zero;
@@ -31,6 +32,7 @@ await client.send('Animation.setPlaybackRate', {
 ```
 
 **Animations disabled**
+
 <img src="https://raw.githubusercontent.com/vrunoa/seleneer/f735413fb575bc369d024577fc17a46a34ead8d4/docs/animation-disabled.gif?token=AACQRZLY7WGK44ZKN76U5MS5I5BZQ" />
 
 # Development
