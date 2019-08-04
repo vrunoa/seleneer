@@ -33,3 +33,6 @@ npm run test-animations-disabled
 # Requirements
 * Java 8+
 * Node 8+
+
+# Useful documentation
+* [https://chromedevtools.github.io/devtools-protocol/tot/Animation](https://chromedevtools.github.io/devtools-protocol/tot/Animation)
