@@ -38,3 +38,5 @@ observe.forEach(method => {
 ```
 
 Once the test is done we'd have collect info on each event happening during our test that we can now export as .har file to view in Chrome. 
+
+<img src="https://github.com/vrunoa/seleneer/blob/network-playground/docs/network-request.png?raw=true">
