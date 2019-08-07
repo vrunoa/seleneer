@@ -16,7 +16,7 @@ Using this approach on puppeter using the existing Chrome session started by Sel
 
 **Animation enabled**
 
-<img src="https://github.com/vrunoa/seleneer/blob/animations-playground/docs/animation-enabled.gif?raw=true" />
+<img src="https://github.com/vrunoa/seleneer/blob/master/docs/animation-enabled.gif?raw=true" />
 
 Now we can disable animations completely by setting the playbackRate to Zero;
 ```
@@ -27,4 +27,4 @@ await client.send('Animation.setPlaybackRate', {
 
 **Animations disabled**
 
-<img src="https://github.com/vrunoa/seleneer/blob/animations-playground/docs/animation-disabled.gif?raw=true" />
+<img src="https://github.com/vrunoa/seleneer/blob/master/docs/animation-disabled.gif?raw=true" />
