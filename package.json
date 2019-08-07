@@ -1,14 +1,15 @@
 {
   "name": "seleneer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "description": "Experiments combining Selenium & Puppeter",
   "main": "index.js",
   "scripts": {
     "lint": "eslint ./tests",
     "start-selenium": "java -jar ./bin/selenium-server-standalone-3.11.0.jar &",
-    "test-animations-enabled": "PLAYBACK_RATE=2 node_modules/.bin/mocha -b -t 0 tests/test_animations.js",
-    "test-animations-disabled": "PLAYBACK_RATE=0 node_modules/.bin/mocha -b -t 0 tests/test_animations.js"
+    "test-network-requests": "node_modules/.bin/mocha -b -t 0 tests/network/test_network_requests.js",
+    "test-animations-enabled": "PLAYBACK_RATE=2 node_modules/.bin/mocha -b -t 0 tests/animations/test_animations.js",
+    "test-animations-disabled": "PLAYBACK_RATE=0 node_modules/.bin/mocha -b -t 0 tests/animations/test_animations.js"
   },
   "husky": {
     "hooks": {
@@ -36,6 +37,7 @@
     "asyncbox": "^2.5.3",
     "babel-eslint": "^10.0.2",
     "chai": "^4.2.0",
+    "chrome-har": "^0.11.0",
     "eslint": "^6.1.0",
     "husky": "^3.0.2",
     "mocha": "^6.2.0",
